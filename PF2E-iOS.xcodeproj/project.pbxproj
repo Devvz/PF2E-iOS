@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		433A26C52568581C00948A96 /* NewLoadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A26C42568581C00948A96 /* NewLoadScreen.swift */; };
+		433A26CC25686E1A00948A96 /* NewCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A26CB25686E1A00948A96 /* NewCharacter.swift */; };
+		433A26CF25686F2300948A96 /* LoadCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A26CE25686F2300948A96 /* LoadCharacter.swift */; };
 		979AB3D42566B8580027E7FC /* PF2E_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AB3D32566B8580027E7FC /* PF2E_iOSApp.swift */; };
 		979AB3D62566B8580027E7FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AB3D52566B8580027E7FC /* ContentView.swift */; };
 		979AB3D82566B8750027E7FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979AB3D72566B8750027E7FC /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		433A26C42568581C00948A96 /* NewLoadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoadScreen.swift; sourceTree = "<group>"; };
+		433A26CB25686E1A00948A96 /* NewCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacter.swift; sourceTree = "<group>"; };
+		433A26CE25686F2300948A96 /* LoadCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharacter.swift; sourceTree = "<group>"; };
 		979AB3D02566B8580027E7FC /* PF2E-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PF2E-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979AB3D32566B8580027E7FC /* PF2E_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PF2E_iOSApp.swift; sourceTree = "<group>"; };
 		979AB3D52566B8580027E7FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				979AB3D32566B8580027E7FC /* PF2E_iOSApp.swift */,
 				979AB3D52566B8580027E7FC /* ContentView.swift */,
 				433A26C42568581C00948A96 /* NewLoadScreen.swift */,
+				433A26CB25686E1A00948A96 /* NewCharacter.swift */,
+				433A26CE25686F2300948A96 /* LoadCharacter.swift */,
 				979AB3D72566B8750027E7FC /* Assets.xcassets */,
 				979AB3DC2566B8750027E7FC /* Info.plist */,
 				979AB3D92566B8750027E7FC /* Preview Content */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433A26CC25686E1A00948A96 /* NewCharacter.swift in Sources */,
 				979AB3D62566B8580027E7FC /* ContentView.swift in Sources */,
 				979AB3D42566B8580027E7FC /* PF2E_iOSApp.swift in Sources */,
 				433A26C52568581C00948A96 /* NewLoadScreen.swift in Sources */,
+				433A26CF25686F2300948A96 /* LoadCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,34 @@ import SwiftUI
 
 struct NewLoadScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                NavigationLink(destination:
+                    NewCharacter()) {
+                    Text("Create New Character")
+                }
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .frame(width: 300.0)
+                .background(Color.gray)
+                .foregroundColor(.white)
+                .font(.title)
+                
+                NavigationLink(destination: LoadCharacter()) {
+                    Text("Load Character")
+                }
+                .padding(.all)
+                .frame(width: 300.0)
+                .background(Color.gray)
+                .foregroundColor(.white)
+                .font(.title)
+                        
+                        
+                        
+                        
+                    .navigationBarBackButtonHidden(true)
+            }
+            .navigationTitle(Text("Home"))
+        }
     }
 }
 
