@@ -9,8 +9,6 @@ import SwiftUI
 
 struct StartScreen: View {
     
-    @State var isActive:Bool = false
-    
     var body: some View {
             ZStack {
                 Image("background")
@@ -36,7 +34,30 @@ struct StartScreen: View {
     }
 
 struct ContentView: View {
+    @State var isActive:Bool = false
     var body: some View {
+        
+        VStack {
+                    // 2.
+                    if self.isActive {
+                        // 3.
+                        NewLoadScreen()
+                    } else {
+                        // 4.
+                        StartScreen()
+                    }
+                }
+                // 5.
+                .onAppear {
+                    // 6.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                        // 7.
+                        withAnimation {
+                            self.isActive = true
+                        }
+                    }
+                }
+        
         StartScreen()
     }
 }
