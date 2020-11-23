@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		433A26C52568581C00948A96 /* NewLoadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A26C42568581C00948A96 /* NewLoadScreen.swift */; };
 		433A26CC25686E1A00948A96 /* NewCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A26CB25686E1A00948A96 /* NewCharacter.swift */; };
 		433A26CF25686F2300948A96 /* LoadCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433A26CE25686F2300948A96 /* LoadCharacter.swift */; };
+		43B352F9256C01EA006EFD59 /* NewCharClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B352F8256C01EA006EFD59 /* NewCharClassView.swift */; };
+		43B352FE256C32BE006EFD59 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 43B352FD256C32BE006EFD59 /* SwiftSoup */; };
+		43B35309256C4EA8006EFD59 /* NewCharacterSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B35308256C4EA8006EFD59 /* NewCharacterSkills.swift */; };
 		979AB3D42566B8580027E7FC /* PF2E_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AB3D32566B8580027E7FC /* PF2E_iOSApp.swift */; };
 		979AB3D62566B8580027E7FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979AB3D52566B8580027E7FC /* ContentView.swift */; };
 		979AB3D82566B8750027E7FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979AB3D72566B8750027E7FC /* Assets.xcassets */; };
@@ -20,6 +23,8 @@
 		433A26C42568581C00948A96 /* NewLoadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoadScreen.swift; sourceTree = "<group>"; };
 		433A26CB25686E1A00948A96 /* NewCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacter.swift; sourceTree = "<group>"; };
 		433A26CE25686F2300948A96 /* LoadCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCharacter.swift; sourceTree = "<group>"; };
+		43B352F8256C01EA006EFD59 /* NewCharClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharClassView.swift; sourceTree = "<group>"; };
+		43B35308256C4EA8006EFD59 /* NewCharacterSkills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterSkills.swift; sourceTree = "<group>"; };
 		979AB3D02566B8580027E7FC /* PF2E-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PF2E-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979AB3D32566B8580027E7FC /* PF2E_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PF2E_iOSApp.swift; sourceTree = "<group>"; };
 		979AB3D52566B8580027E7FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B352FE256C32BE006EFD59 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,8 @@
 				979AB3D52566B8580027E7FC /* ContentView.swift */,
 				433A26C42568581C00948A96 /* NewLoadScreen.swift */,
 				433A26CB25686E1A00948A96 /* NewCharacter.swift */,
+				43B35308256C4EA8006EFD59 /* NewCharacterSkills.swift */,
+				43B352F8256C01EA006EFD59 /* NewCharClassView.swift */,
 				433A26CE25686F2300948A96 /* LoadCharacter.swift */,
 				979AB3D72566B8750027E7FC /* Assets.xcassets */,
 				979AB3DC2566B8750027E7FC /* Info.plist */,
@@ -94,6 +102,9 @@
 			dependencies = (
 			);
 			name = "PF2E-iOS";
+			packageProductDependencies = (
+				43B352FD256C32BE006EFD59 /* SwiftSoup */,
+			);
 			productName = "PF2E-iOS";
 			productReference = 979AB3D02566B8580027E7FC /* PF2E-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 979AB3C72566B8580027E7FC;
+			packageReferences = (
+				43B352FC256C32BE006EFD59 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 979AB3D12566B8580027E7FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,11 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B35309256C4EA8006EFD59 /* NewCharacterSkills.swift in Sources */,
 				433A26CC25686E1A00948A96 /* NewCharacter.swift in Sources */,
 				979AB3D62566B8580027E7FC /* ContentView.swift in Sources */,
 				979AB3D42566B8580027E7FC /* PF2E_iOSApp.swift in Sources */,
 				433A26C52568581C00948A96 /* NewLoadScreen.swift in Sources */,
 				433A26CF25686F2300948A96 /* LoadCharacter.swift in Sources */,
+				43B352F9256C01EA006EFD59 /* NewCharClassView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43B352FC256C32BE006EFD59 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43B352FD256C32BE006EFD59 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43B352FC256C32BE006EFD59 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 979AB3C82566B8580027E7FC /* Project object */;
 }

@@ -15,7 +15,7 @@ struct NewLoadScreen: View {
                     NewCharacter()) {
                     Text("Create New Character")
                 }
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .padding(.all)
                 .frame(width: 300.0)
                 .background(Color.gray)
                 .foregroundColor(.white)
